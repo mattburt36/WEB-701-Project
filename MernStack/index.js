@@ -21,8 +21,13 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(bodyParser.json());
+//Detect json payloads
+app.use(express.json());
+//Detect and handle url encoded posts 
+app.use(express.urlencoded({extended: false}));
+
 app.use('/api', routes);
+
 app.use((err, req, res, next) => {
   console.log(err);
   next();
