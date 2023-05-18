@@ -1,0 +1,6 @@
+[submodule "FARM-Stack"]
+	path = FARM-Stack
+	url = https://github.com/mattburt36/FARM-Stack.git
+[submodule "MEAN-Stack"]
+	path = MEAN-Stack
+	url = https://github.com/mattburt36/MEAN-Stack.git
